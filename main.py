@@ -120,14 +120,12 @@ def main():
 
     print('Plotting Iris Sepals...')
     X_sepals = X[:, [0, 1]]
-    visualize_decision_boundaries_iris(X = X_sepals, y = y, resolution = resolution, sepal_or_petal = 'Sepal')
+    visualize_decision_boundaries_iris(X = X_sepals, y = y, class_names = class_names, resolution = resolution, sepal_or_petal = 'Sepal')
     # Iris Petals
     print('Plotting Iris Petals...')
     X_petals = X[:, [2, 3]]
-    visualize_decision_boundaries_iris(X = X_petals, y = y, resolution = resolution, sepal_or_petal = 'Petal')
+    visualize_decision_boundaries_iris(X = X_petals, y = y, class_names = class_names, resolution = resolution, sepal_or_petal = 'Petal')
 
-
-    
     print('Please refer to plots/iris directory to view decision boundaries.')
     print('--------------------------------------------------------------------------------------------------------------\n')
     #######################################################################################################################################

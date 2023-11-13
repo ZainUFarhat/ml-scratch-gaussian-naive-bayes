@@ -40,7 +40,6 @@ def scatter_plot(X, y, title, x_label, y_label, class_names, savepath):
     Parameters:
         X: x-axis datapoints
         y: y-axis datapoints
-        features: which 2 features to plot against
         title: tite of plot
         x_label: label for x axis
         y_label: label for y axis
@@ -58,7 +57,7 @@ def scatter_plot(X, y, title, x_label, y_label, class_names, savepath):
     ax = plt.axes()
     ax.set_facecolor("lavender")
 
-    # find features correspaonding to class labels
+    # find features corresponding to class labels
     class_0, class_1 = X[y == 0], X[y == 1]
 
     # scatter plots of class features against themselves
@@ -84,11 +83,10 @@ def visualize_decision_boundary(X, y, title, x_label, y_label, class_names, reso
    Parameters:
         X: features
         y: targets
-        features: which 2 features to plot against
-        epochs: number of epochs logistic regression model was trained on
-        model: new model to train on
+        title: title for our plot
         x_label: x label of our plot
         y_label: y label of our plot
+        class_names: names of our classes
         resolution: resolution of grid for plotting the decision boundary
         savepath: path to save our decision plot boundary to
 
@@ -162,6 +160,7 @@ def iris_visualize(X, y, feature_names, class_names):
     
     Parameters:
         X: features
+        y: labels
         feature_names: name of our feaures
         class_names: labels
     
@@ -208,7 +207,7 @@ def iris_visualize(X, y, feature_names, class_names):
     return None
 
 
-def visualize_decision_boundaries_iris(X, y, resolution, sepal_or_petal):
+def visualize_decision_boundaries_iris(X, y, class_names, resolution, sepal_or_petal):
 
     """
     Description:
@@ -216,9 +215,9 @@ def visualize_decision_boundaries_iris(X, y, resolution, sepal_or_petal):
         This is to visualize our results for all possible datapoints on a given grid
     
     Parameters:
-        model: our trained model
-        X_train_reduced: 2D features selected from original X_train
-        y_train: original y_train
+        X: features
+        y: labels
+        class_names: names of our classes
         resolution: resolution of grid for plotting the decision boundary
         sepal_or_petal: are these the sepal features or the petals?
     
@@ -256,7 +255,8 @@ def visualize_decision_boundaries_iris(X, y, resolution, sepal_or_petal):
     plt.pcolormesh(xx, yy, Z, cmap = cmap_background)
 
     # scatter the two chosen features across each other and use y labels as colors based on the color map above
-    plt.scatter(X[:, 0], X[:, 1], c = y, cmap = cmap_bold)
+    sc = plt.scatter(X[:, 0], X[:, 1], c = y, cmap = cmap_bold)
+    plt.legend(sc.legend_elements()[0], class_names, title = 'Classes', loc = 'lower right')
     plt.title(f'Iris Decision Boundary Prediction - {sepal_or_petal}')
     plt.xlabel(f'{sepal_or_petal.lower()} length (cm)')
     plt.xlim(xx.min(), xx.max())
