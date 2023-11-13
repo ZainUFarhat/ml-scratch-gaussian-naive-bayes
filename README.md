@@ -49,11 +49,11 @@ For each dataset I will share the test accuracy and show the decision boundary p
 
     I will show the decision boundaries for both sepals and petals features of the dataset.
 
-**-** Sepal Decision Boundary:
+**-** Petal Decision Boundary:
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-gaussian-naive-bayes/blob/main/plots/iris/iris_decision_boundaries_petal.png?raw=true)
 
-**-** Petal Decision Boundary:
+**-** Sepal Decision Boundary:
 
 ![alt text](https://github.com/ZainUFarhat/ml-scratch-gaussian-naive-bayes/blob/main/plots/iris/iris_decision_boundaries_sepal.png?raw=true)
 
