@@ -1,2 +1,2 @@
-# ml-scratch-naive-bayes
-Naive Bayes Algorithm from scratch implementation
+# ml-scratch-gaussian-naive-bayes
+Gaussian Naive Bayes Algorithm from scratch implementation
