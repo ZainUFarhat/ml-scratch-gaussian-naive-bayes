@@ -6,7 +6,7 @@ class GaussianNaiveBayes():
 
     """
     Description:
-        My form scratch implementation of the Gaussian Naive Bayes Algorithm
+        My from scratch implementation of the Gaussian Naive Bayes Algorithm
     """
 
     # fit
