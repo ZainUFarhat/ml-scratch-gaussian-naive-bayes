@@ -14,7 +14,7 @@ def main():
 
     """
     Description:
-        Trains and tests our Random Forest
+        Trains and tests our Gaussian Naive Bayes
     
     Parameters:
         None
