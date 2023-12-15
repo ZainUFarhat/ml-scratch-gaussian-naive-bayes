@@ -36,7 +36,7 @@ For each dataset I will share the test accuracy and show the decision boundary p
 - Numerical Result:
      - Accuracy = 96.49%
 
-- See visualizations below:
+- See visualization below:
 
  ![alt text](https://github.com/ZainUFarhat/ml-scratch-gaussian-naive-bayes/blob/main/plots/bc/bc_decision_boundary.png?raw=true) 
 
@@ -45,7 +45,7 @@ For each dataset I will share the test accuracy and show the decision boundary p
 - Numerical Result:
      - Accuracy = 100.0%
 
-- See visualizations below:
+- See visualization below:
 
     I will show the decision boundaries for both sepals and petals features of the dataset.
 
@@ -62,6 +62,6 @@ For each dataset I will share the test accuracy and show the decision boundary p
 - Numerical Result:
      - Accuracy = 71.91%
 
-- See visualizations below:
+- See visualization below:
 
  ![alt text](https://github.com/ZainUFarhat/ml-scratch-gaussian-naive-bayes/blob/main/plots/db/db_decision_boundary.png?raw=true) 
